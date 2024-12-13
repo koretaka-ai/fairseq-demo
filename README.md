@@ -20,10 +20,8 @@ cd fairseq-demo
 
 ## 仮想環境の構築
 ```bash
-uv init
-uv python pin 3.10
-. .venv/bin/activate
 uv sync
+. .venv/bin/activate
 ```
 
 ## 実行
