@@ -21,8 +21,12 @@ SPM_JA=${PRE_TRAINED_DIR}/enja_spm_models/spm.ja.nopretok.model
 # Download
 # ------------------------
 pushd ${RESOURCES_DIR}
-wget ftp://ftp.edrdg.org/pub/Nihongo/examples.utf.gz
-gunzip examples.utf.gz
+if [ -f ${RESOURCES_DIR} ]; then
+    echo "[Info] examples file already exists, skipping download"
+else
+    wget ftp://ftp.edrdg.org/pub/Nihongo/examples.utf.gz
+    gunzip examples.utf.gz
+fi
 popd
 
 # ------------------------
