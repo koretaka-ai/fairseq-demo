@@ -1,0 +1,25 @@
+[project]
+name = "test-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fairseq==0.12.2",
+    "torchaudio==0.12.1",
+    "torch==1.12.1+cu113",
+    "torchvision==0.13.1+cu113",
+    "sentencepiece>=0.2.0",
+    "scikit-learn>=1.6.0",
+    "tensorboardx>=2.6.2.2",
+    "pybind11>=2.12",
+    "numpy==1.21.3",
+    "sacrebleu[ja]>=2.4.3",
+    "unbabel-comet>=2.2.4",
+]
+
+[tool.uv]
+find-links = [
+		"https://download.pytorch.org/whl/cu113/torch",
+		"https://download.pytorch.org/whl/cu113/torchvision",
+]
