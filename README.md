@@ -14,8 +14,8 @@ source $HOME/.local/bin/env
 
 ## git clone
 ```bash
-git clone 
-cd 
+git clone https://github.com/koretaka-ai/fairseq-demo.git
+cd fairseq-demo
 ```
 
 ## 仮想環境の構築
